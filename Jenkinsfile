@@ -18,7 +18,7 @@ pipeline {
             }
             steps {
                 script {
-                    app = docker.build(kenned2780/train-schedule)
+                    app = docker.build("kenned2780/train-schedule")
                     app.inside {
                         sh 'echo Hello, World!'
                     }
